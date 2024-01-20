@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./bootstrap.css">
 <h1>連線資料庫</h1>
 <?php
 //建立mysql連線設定
@@ -98,12 +99,15 @@ if(!empty($_POST)){
         <td><?=$row['num'];?></td>
         <td><?=$row['price'];?></td>
         <td>
-            <a href="edit.php?id=<?=$row['id'];?>">編輯</a>
+            <a class='btn btn-primary' href="edit.php?id=<?=$row['id'];?>">編輯</a>
                 <!-- 透過網址傳送id值到del.php -->
-            <a href='del.php?id=<?=$row['id'];?>'>刪除</a>
+            <a class='btn btn-danger' href='del.php?id=<?=$row['id'];?>'>刪除</a>
         </td>
     </tr>
     <?php
     }
     ?>
 </table>
+
+<script src="jquery.js"></script>
+<script src="bootstrap.js"></script>
