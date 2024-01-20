@@ -98,6 +98,7 @@ if(!empty($_POST)){
         <td><?=$row['num'];?></td>
         <td><?=$row['price'];?></td>
         <td>
+            <a href="edit.php?id=<?=$row['id'];?>">編輯</a>
                 <!-- 透過網址傳送id值到del.php -->
             <a href='del.php?id=<?=$row['id'];?>'>刪除</a>
         </td>
