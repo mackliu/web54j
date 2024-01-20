@@ -99,6 +99,7 @@ if(!empty($_POST)){
         <td><?=$row['num'];?></td>
         <td><?=$row['price'];?></td>
         <td>
+                <!-- 透過網址傳送id值到edit.php -->
             <a class='btn btn-primary' href="edit.php?id=<?=$row['id'];?>">編輯</a>
                 <!-- 透過網址傳送id值到del.php -->
             <a class='btn btn-danger' href='del.php?id=<?=$row['id'];?>'>刪除</a>
